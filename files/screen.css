@@ -70,21 +70,15 @@ color:#FFF;
 text-decoration:none;
 cursor: url(../img/cursor_hand.png) 18 0, pointer;
 }
-.no-select{
-touch-action: none;
-pointer-events: none;
--webkit-user-drag: none;
--khtml-user-drag: none;
--moz-user-drag: none;
--o-user-drag: none;
-user-drag: none;
--webkit-touch-callout: none;
--webkit-user-select: none;
--khtml-user-select: none;
--moz-user-select: none;
--ms-user-select: none;
-user-select: none;
-}
+
+.no-select {
+    user-select: none;
+    -webkit-user-drag: none;
+    -khtml-user-drag: none;
+    -moz-user-drag: none;
+    -o-user-drag: none;
+    user-drag: none;
+  }
 
 #Container{
 min-width:721px;
@@ -106,6 +100,7 @@ position:absolute;
 .Flip{
 position:relative;
 height:100%;
+width: 100%;
 }
 
 .Flip .front{
@@ -114,7 +109,6 @@ cursor: url(../img/cursor_hand.png) 18 0, pointer;
 }
 
 .Cell{
-float:left;
 margin:0.5vw;
 overflow:hidden;
 }
@@ -146,7 +140,7 @@ margin:0 auto;
 padding:15px;
 margin-top:15px;
 font-weight:bold;
-width:55%;
+width:64%;
 }
 .BTN:hover {
 color:#000;
@@ -197,21 +191,28 @@ white-space:nowrap;
 position: relative;
 }
 
-.test{
-background-color: red;
+.SNS{
+background-color:#FFF;
+color: black;
+padding:10%;
+height:100%;
+}
+
+.Rounded
+{
+border-radius: 3%;
 }
 
 @media only screen and (max-width: 1080px) and (orientation: portrait) {
-.Cell{
-margin:1.5vw;
-}
-#Container{
-width:97vw;
-padding:1.5vw;
-}
-.Footer{
-width:94vw;
-padding:0 3vw 3vw;
-}
-
+    .Cell, #Container {
+      margin: 1.5vw;
+    }
+    #Container {
+      width: 97vw;
+      padding: 1.5vw;
+    }
+    .Footer {
+      width: 94vw;
+      padding: 0 3vw 3vw;
+    }
 }
