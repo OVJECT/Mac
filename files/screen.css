@@ -200,7 +200,8 @@ height:100%;
 
 .Rounded
 {
-border-radius: 3%;
+border-radius: 1.5vw;
+background-color:#1c1c1c;
 }
 
 @media only screen and (max-width: 1080px) and (orientation: portrait) {
