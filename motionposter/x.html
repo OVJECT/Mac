@@ -1,0 +1,47 @@
+<html lang=”en”>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="title" content="OVJECT™">
+  <meta name="description" content="We do what we want to do and find something interesting.">
+  <meta name="author" content="Junyoung Lee">
+  <meta name="keywords" content="Motion Poster Project, 모션포스터 프로젝트">
+  <meta name="theme-color" content="#000">
+  <meta name="msapplication-navbutton-color" content="#000">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta property="og:url" content="http://ovject.com" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="OVJECT™ :Motion Poster Project" />
+  <meta property="og:description" content="We do what we want to do and find something interesting." />
+  <meta property="og:image" content="http://ovject.com/img/ogLOGO.png">
+  <meta property="og:image:width" content="800">
+  <meta property="og:image:height" content="400">
+  <meta property="og:image:type" content="./image/png">
+  <link rel="apple-touch-icon" href="./img/icon180.png">
+  <link rel="icon" href="./img/icon180.png">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="js/jquery-3.1.1.min.js"></script>
+  <script src="js/jQueryRotate.js"></script>
+</head>
+<body>
+  <!-- Camera -->
+  <main id="camera">
+      <!-- Camera sensor -->
+      <canvas id="camera--sensor"></canvas>
+      <!-- Camera view -->
+      <video id="camera--view" autoplay playsinline></video>
+      <!-- Camera output -->
+      <img src="//:0" alt="" id="camera--output">
+      <!-- Camera trigger -->
+      <div class="MPP" id="MPP">
+        <div class="LINE"></div>
+      </div>
+      <button id="camera--trigger">Take a picture</button>
+  </main>
+    <!-- Reference to your JavaScript file -->
+    <script src="js/main.js"></script>
+</body>
+</html>
